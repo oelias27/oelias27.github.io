@@ -2,4 +2,4 @@
 
 My single-page responsive portfolio site, built using HTML, LESS and vanilla Javascript. 
 
-View at [orlandoelias.com]('www.orlandoelias.com')
+View at [orlandoelias.com](http://www.orlandoelias.com)
