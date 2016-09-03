@@ -8,24 +8,24 @@
 
 
 .navigation {
-  position: fixed;
-  height: 100%;
-  width: 200px;
-  top: 0;
-  left: 0;
   background-color: #192028;
   box-shadow: 0px 10px 20px gray;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 200px;
   z-index: 1;
 
   @media (max-width: 800px) {
-    width: 100%;
-    height: 90px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     box-shadow: 0px 5px 10px gray;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
     position: absolute;
     top: 0;
+    width: 100%;
   }
 
   .menu {
@@ -38,13 +38,13 @@
     width: 50px;
 
     span, span:before, span:after {
+      background: #fff;
       content: '';
       display: block;
-      width: 100%;
       height: 3px;
-      background: #fff;
       position: relative;
       transition: all .5s ease-in-out;
+      width: 100%;
     }
 
     span:before {
@@ -70,14 +70,14 @@
     }
 
     span:before {
-      transform-origin: center;
       transform: translateY(-15px) rotate(45deg);
+      transform-origin: center;
       transition: all .5s ease-in-out;
     }
 
     span:after {
-      transform-origin: center;
       transform: translateY(15px) rotate(-45deg);
+      transform-origin: center;
       transition: all .5s ease-in-out;
     }
   }
@@ -85,35 +85,35 @@
 
 .logo {
   height: 100px;
-  width: 110px;
   margin: auto;
+  width: 110px;
   z-index: 1;
 
   @media (max-width: 800px) {
-    margin-left: 20px;
     height: 60px;
+    margin-left: 20px;
     width: 60px;
   }
 
   a {
     display: block;
+    height: 100px;
     position: relative;
     text-decoration: none;
-    height: 100px;
 
     @media (max-width: 800px) {
       height: 60px;
     }
 
     &:hover {
-      cursor: pointer;
       color: pink;
+      cursor: pointer;
     }
 
     p {
       color: white;
-      line-height: 100px;
       font-size: 64px;
+      line-height: 100px;
       text-align: right;
 
       @media (max-width: 800px) {
@@ -125,24 +125,23 @@
 }
 
 .nav-links-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 200px;
-  display: flex;
-  align-items: center;
 
   .social-icons {
-    position: fixed;
-    bottom: 20px;
-    height: 50px;
-    left: 15px;
-    width: 170px;
-    // background-color: yellow;
-    display: flex;
     align-items: center;
+    bottom: 20px;
+    display: flex;
+    height: 50px;
     justify-content: space-between;
+    left: 15px;
+    position: fixed;
+    width: 170px;
 
     @media (max-width: 800px) {
       display: none;
@@ -159,30 +158,29 @@
   }
 
   @media (max-width: 800px) {
-    width: 100%;
     height: 90px;
     position: absolute;
+    width: 100%;
   }
 }
 
 .nav-links {
   height: 30%;
-  width: 110px;
-  margin: auto;
   display: flex;
-  text-align: right;
   flex-direction: column;
   justify-content: space-between;
+  margin: auto;
+  text-align: right;
   transition: all .5s ease-in-out;
+  width: 110px;
 
   @media (max-width: 800px) {
+    align-items: center;
     display: block;
+    height: auto;
+    text-align: center;
     transform: translateY(-270px);
     width: 100%;
-    height: auto;
-    dispay: flex;
-    align-items: center;
-    text-align: center;
     z-index: 0;
 
   }
@@ -190,25 +188,25 @@
   .nav-link {
 
     @media (max-width: 800px) {
-      display: flex;
       align-items: center;
+      background-color: #192028;
+      display: flex;
       height: 90px;
       width: 100%;
-      background-color: #192028;
     }
 
     a {
-      text-decoration: none;
       color: white;
       font-size: 18px;
       letter-spacing: 2px;
+      text-decoration: none;
       transition: all 0.2s ease-in-out;
 
       @media (max-width: 800px) {
-        font-size: 16px;
         height: 100%;
-        width: 100%;
+        font-size: 16px;
         line-height: 90px;
+        width: 100%;
       }
 
       &:hover {
@@ -230,14 +228,14 @@
 
 #main {
   height: auto;
-  max-width: 100%;
   margin-left: 200px;
+  max-width: 100%;
 
   @media (max-width: 800px) {
-    width: 100%;
-    margin-top: 90px;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 90px;
+    width: 100%;
   }
 }
 
@@ -246,12 +244,12 @@
 
 
 .landing {
-  min-height: 800px;
-  background-color: #95C1CC;
-  margin: none;
-  display: flex;
   align-items: center;
+  background-color: #95C1CC;
+  display: flex;
   flex-direction: row;
+  margin: none;
+  min-height: 800px;
   width: 100%;
 
   @media (max-width: 800px) {
@@ -259,13 +257,13 @@
   }
 
   .landing-text {
-    text-align: center;
+    color: #525564;
+    flex: 1;
     font-size: 62px;
     font-weight: 900;
     letter-spacing: 6px;
-    flex: 1;
     margin: auto;
-    color: #525564;
+    text-align: center;
 
     h4 {
       font-size: 20px;
@@ -290,39 +288,39 @@
 
 .about {
   height: auto;
-  width: 100%;
   display: block;
+  width: 100%;
 
   h1 {
     font-size: 38px;
-    text-align: center;
     margin-top: 50px;
+    text-align: center;
   }
 
   .about-info {
-    min-height: 400px;
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    min-height: 400px;
     width: 100%;
 
     @media (min-width: 800px) {
-      max-width: 800px;
-      display: flex;
-      margin: auto;
-      flex-direction: row;
       align-items: center;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      max-width: 800px;
     }
 
     .o-image {
-      height: 250px;
-      width: 250px;
-      margin: 0 55px;
-      border-radius: 100%;
       background-image: url('../img/orlando.jpg');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50% 50%;
+      height: 250px;
+      margin: 0 55px;
+      border-radius: 100%;
+      width: 250px;
 
     }
 
@@ -334,10 +332,9 @@
       }
 
       .bio-text {
-        font-size: 18px;
-        width: 80%;
-        margin: auto;
         font-size: 24px;
+        margin: auto;
+        width: 80%;
 
         @media (min-width: 800px) {
           font-size: 18px;
@@ -357,16 +354,16 @@
   width: 100%;
 
   h1 {
-    text-align: center;
     font-size: 32px;
     font-weight: lighter;
     margin-top: 70px;
+    text-align: center;
   }
 
   .view-project {
-    max-width: 220px;
     margin: auto;
     margin-bottom: 20px;
+    max-width: 220px;
 
     &:first-of-type {
       max-width: 130px;
@@ -377,31 +374,31 @@
 
       button {
         background-color: #95C1CC;
-        color: #525564;
         border: none;
-        padding: 10px;
-        margin: 5px;
         box-shadow: 0 3px 5px 0 gray;
+        color: #525564;
+        margin: 5px;
+        padding: 10px;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          cursor: pointer;
           background-color: darken(#95C1CC, 8%);
+          cursor: pointer;
         }
       }
     }
   }
 
   .project {
-    min-height: 500px;
-    max-width: 800px;
     margin: auto;
+    max-width: 800px;
+    min-height: 500px;
 
     @media (min-width: 800px) {
-      min-height: 350px;
+      align-items: flex-start;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      min-height: 350px;
     }
 
     .project-description {
@@ -410,43 +407,42 @@
       margin-left: 10px;
 
       @media (min-width: 800px) {
-        font-size: 18px;
-        height: auto;
-        width: 60%;
-        margin: 0;
         display: flex;
         flex-direction: column-reverse;
+        font-size: 18px;
+        height: auto;
+        margin: 0;
+        width: 60%;
       }
 
       .tech-icons {
-        // background-color: orange;
-        width: 80%;
-        margin: auto;
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
 
         .icon {
           background-color: #525564;
-          color: white;
           border: none;
-          padding: 10px;
-          margin: 5px;
           box-shadow: 0 3px 5px 0 gray;
+          color: white;
+          margin: 5px;
+          padding: 10px;
         }
       }
 
       .description-text {
-        width: 80%;
         margin: auto;
+        width: 80%;
       }
     }
 
     .image {
-      height: 250px;
-      background-size: contain;
-      background-repeat: no-repeat;
       background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 250px;
 
       a {
         display: block;
@@ -478,33 +474,33 @@
 
 
 .contact {
-  max-height: 500px;
-  width: 100%;
-  padding: 0;
   margin-bottom: 100px;
+  max-height: 500px;
+  padding: 0;
+  width: 100%;
 
   @media (max-width: 800px) {
-    margin-top: 100px;
     margin-bottom: 0px;
+    margin-top: 100px;
   }
 
   .cta {
     background-color: #525564;
-    max-width: 600px;
     height: 100px;
     margin: auto;
+    max-width: 600px;
 
     @media (max-width: 800px) {
-      width: 100%;
       max-width: 100%;
+      width: 100%;
     }
 
     h1 {
+      color: white;
       font-size: 36px;
       font-weight: 100;
       line-height: 100px;
       text-align: center;
-      color: white;
 
       @media (max-width: 800px) {
         font-size: 6vw;
@@ -514,25 +510,24 @@
   }
 
   .contact-card {
-    max-width: 600px;
-    height: auto;
-    color: #525564;
-    margin: auto;
     background-color: #95C1CC;
-    text-align: center;
-    font-size: 54px;
-    line-height: 200px;
     border: none;
     box-shadow: 0 3px 5px 0 gray;
+    color: #525564;
+    font-size: 54px;
+    height: auto;
+    line-height: 200px;
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
     transition: all 0.2s ease-in-out;
 
     @media (max-width: 800px) {
+      font-size: 8vw;
+      height: 150px;
+      line-height: 150px;
       max-width: 100%;
       width: 100%;
-      height: 150px;
-      font-size: 24px;
-      font-size: 8vw;
-      line-height: 150px;
     }
 
     &:hover {
@@ -550,10 +545,10 @@
   }
 
   .mobile-icon-wrapper {
-    width: 100%;
-    height: 150px;
     background-color: #95C1CC;
     display: none;
+    height: 150px;
+    width: 100%;
 
 
     @media(max-width: 800px) {
@@ -561,20 +556,20 @@
     }
 
     .mobile-icons {
-      max-width: 320px;
-      height: 100%;
-      padding: 0 5px;
-      margin: auto;
-      display: flex;
       align-items: center;
+      display: flex;
+      height: 100%;
       justify-content: space-between;
+      margin: auto;
+      max-width: 320px;
+      padding: 0 5px;
 
       a {
-        display: flex;
         align-items: center;
-        text-decoration: none;
-        height: 100%;
         color: #525564;
+        display: flex;
+        height: 100%;
+        text-decoration: none;
 
         &:hover {
           i {
@@ -595,13 +590,13 @@
 //-----------Footer----------//
 
 .footer {
-  margin: 0;
-  height: 100px;
-  text-align: center;
-  color: white;
-  background-color: #525564;
-  display: flex;
   align-items: center;
+  background-color: #525564;
+  color: white;
+  display: flex;
+  height: 100px;
+  margin: 0;
+  text-align: center;
 
   p {
     margin: auto;
